@@ -68,7 +68,8 @@ stubgen [-w] [-r] [-x] <output-exe> <command...>
   writing it (see below). If UPX can't be found or fails, `stubgen` just
   leaves the exe uncompressed and prints a note — it won't fail the build.
 
-Flags can be combined in any order (`-wrx`, or `-w -r -x`, etc.).
+Flags can be given in any order (`-w -r -x`, `-x -w`, etc.), but each needs
+its own `-`; bundled short flags like `-wrx` are not supported.
 
 ### Examples
 
