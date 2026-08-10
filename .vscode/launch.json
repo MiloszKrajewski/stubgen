@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug stubgen",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/${config:mainExePath}",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Nim: build project (debug)"
+    }
+  ]
+}

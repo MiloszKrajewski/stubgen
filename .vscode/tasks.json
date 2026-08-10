@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Nim: build project (debug)",
+      "type": "shell",
+      "command": "nimble",
+      "args": ["build", "--debugger:native", "-d:debug"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
